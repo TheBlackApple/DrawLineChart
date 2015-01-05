@@ -125,7 +125,6 @@
         CGContextAddLineToPoint(context, self.bounds.size.width, verticalLine);
         //绘制图形
         CGContextStrokePath(context);
-        
         NSNumber * yAxisValue = [self.yAxisValues objectAtIndex:i];
         NSString * numberString = [NSString stringWithFormat:self.floatNumberFormatterString,yAxisValue.floatValue];
         NSInteger count = [numberString lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
